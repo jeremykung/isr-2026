@@ -42,4 +42,8 @@ console.log(3 * 2)
 console.log(6 / 2)
 
 // Modulus uses %
-// to be continued...
+// gives you the remainder from division
+console.log('MODULUS')
+console.log(5 % 2)  // 1
+console.log(10 % 4) // 2
+console.log(10 % 6) // 4
