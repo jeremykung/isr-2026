@@ -1,15 +1,18 @@
 /*
 1. If
 2. Else
-3. If Else
+3. Else If
 
-Comparisons
+COMPARISON OPERATORS
 >   greater than
 <   less than
 >=  greater or equal to
 <=  less than or equal to
 ==  equal to
 === equal to STRICT (compares value and data type)
+
+&&  AND condition
+||  OR condition
 
 */
 
