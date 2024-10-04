@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex</title>
+</head>
+<body>
+    
+    <script>
+        // localStorage.setItem("events", "[{date: May 10, title: Ppl died}, {date: May 2, title: Ppl lived}]")
+
+        const data = [
+            {date: 'May 10', title: 'Ppl died'}, 
+            {date: 'May 2', title: 'Ppl lived'},
+            {date: 'May 4', title: 'Ppl continued living'},
+        ]
+        // converts to string
+        const stringData = JSON.stringify(data)
+
+        localStorage.setItem('events', stringData)
+
+        const savedData = localStorage.getItem('events')
+        console.log(savedData)
+    </script>
+</body>
+</html>
