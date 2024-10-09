@@ -52,8 +52,9 @@ for (k = 100; k > 0; k--) {
 
 // parseInt()
 // converts strings to numbers
-// string is an argument, returns a number
-console.log(parseInt("8781"))
+// takes a string as an argument, and returns it as a number
+const x = parseInt("8717")
+console.log(x)
 
 // "1" ❌
 // 1   ✅
