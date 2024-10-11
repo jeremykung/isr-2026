@@ -64,3 +64,38 @@ console.log(x)
 // ex. Welding the metal
 // ex. Joining arm
 // ex. Painting...
+
+function produce() {
+    const amount = prompt("how many sushis u want?")
+
+    //   create var | condition       | do after loop
+    for (counter = 0; counter < amount; counter++) {
+        console.log('make rice')
+        console.log('add sushi vinegar')
+        console.log('add discount salmon from store')
+        console.log('package nicely')
+    }
+
+}
+
+
+
+
+
+
+// Looping over Arrays
+const friends = ["Vivian", "Ash Ketchup", "Tomer", "Armanda"]
+
+console.log(friends.length)
+
+// How do I do something for each element in an array?
+
+for (i=0; i<friends.length; i++) {
+    console.log("I do have friends I promise, one is,", friends[i])
+}
+
+// Create a new array of fruits. 🍉
+// When a user pushes a button, a prompt commes up
+// Whatever they type will be added to fruits using Array.push()
+// Inside the same function for the button push, print out all the fruits that are now in the array
+// ⭐ BONUS make a button to remove fruits and reprint the list
