@@ -99,3 +99,4 @@ for (i=0; i<friends.length; i++) {
 // Whatever they type will be added to fruits using Array.push()
 // Inside the same function for the button push, print out all the fruits that are now in the array
 // ⭐ BONUS make a button to remove fruits and reprint the list
+
