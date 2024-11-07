@@ -121,3 +121,9 @@ checkLucky(lottoNums)
 // Create a function that accepts an array of numbers and outputs the average (add all numbers and divide by total amount of numbers). For example, if the array is [2,5,3,6], the output will be 4.
 
 // Create a function that accepts an array of numbers. It will output the highest number in the array, and also the lowest. For example, if the array is [5,2,6,9,1,3], it will output HIGHEST is 9 and LOWEST is 1.
+
+// Create a function that takes an array. The function should reverse the array, and return the result. For example, [1,2,3] will become [3,2,1]. You will need to use Array.pop() and Array.push().
+
+// Create a function that takes a number array. It will double the values of each number in the array and return the new doubled array. For example, [1,2,3] will become [2,4,6].
+
+// Create a function that accepts a string as a 1st argument, and an array of names as the 2nd argument. It will search if the string (1st argument) exists in the array of names (2nd argument). If it exists, output the index of the array where it was found. If it does not exist, output "404 not found!".    
