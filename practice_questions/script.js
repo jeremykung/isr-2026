@@ -124,6 +124,49 @@ checkLucky(lottoNums)
 
 // Create a function that takes an array. The function should reverse the array, and return the result. For example, [1,2,3] will become [3,2,1]. You will need to use Array.pop() and Array.push().
 
+
+const someNums = [1,2,3]
+
+function reverseArray(array) {
+
+    // 1. find out how many nums are in the array ✅
+    // 2. pop off the numbers, and put them in a new array
+        // - initialize the new array ✅
+        // - pop off the number from the array ✅
+        // - save it ✅
+        // - push it to the new array ✅
+        // - repeat number of times appropriate for array ✅
+            // - use a for loop
+            // - set the for loop to repeat as many times as the original array length
+    // 3. return the new array ✅
+
+    const reversedArray = []
+    const howManyNums = array.length
+
+    for (counter = 0; counter < howManyNums; counter++) {
+
+        const poppedNumber = array.pop()
+        reversedArray.push(poppedNumber)
+
+    }
+
+    console.log('reversed array is:', reversedArray)
+
+}
+
+reverseArray([1,2,3])
+
 // Create a function that takes a number array. It will double the values of each number in the array and return the new doubled array. For example, [1,2,3] will become [2,4,6].
 
-// Create a function that accepts a string as a 1st argument, and an array of names as the 2nd argument. It will search if the string (1st argument) exists in the array of names (2nd argument). If it exists, output the index of the array where it was found. If it does not exist, output "404 not found!".    
+// Create a function that accepts a string as a 1st argument, and an array of names as the 2nd argument. It will search if the string (1st argument) exists in the array of names (2nd argument). If it exists, output the index of the array where it was found. If it does not exist, output "404 not found!".
+
+const namesArray = []
+
+for (i=0; i<5; i++) {
+    const newName = prompt("enter a name:")
+    namesArray.push(newName)
+}
+
+function findName(nameToFind, arrayOfNames) {
+    
+}
