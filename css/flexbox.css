@@ -1,0 +1,22 @@
+.enemies {
+    display: flex;
+    justify-content: space-around;
+}
+
+#siff {
+    background-color: violet;
+}
+
+#nat {
+    background-color: lightblue;
+}
+
+.besties {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.besties > img {
+    height: 80px;
+}
