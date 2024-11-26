@@ -1,0 +1,28 @@
+div {
+    height: 100px;
+    width: 100px;
+}
+
+.menu {
+    background-color: orange;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.red {
+    background-color: red;
+}
+.blue {
+    background-color: blue;
+    height: 2000px;
+    /* position: relative;
+    top: 10px;
+    left: 10px; */
+}
+.green {
+    background-color: green;
+    /* position: absolute;
+    top: 20px;
+    left: 20px; */
+}
