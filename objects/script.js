@@ -35,8 +35,79 @@ console.log(car.drive())
 // it should have 5 properties and 2 methods
 // test out your object to see if you can access properites and methods
 
-// Object Literal
+// Object
+const brenner = {
+    height: 290,
+    hair: "short",
+
+    code() {
+        console.log('student is coding...')
+    },
+    study() {
+        console.log('student is studying...')
+    }
+}
+
+// Class
+class Student {
+    
+    // properties
+    constructor(givenHeight, givenHairstyle, givenName) {
+        this.height = givenHeight,
+        this.hair = givenHairstyle,
+        this.name = givenName
+    }
+
+    // methods
+    study() {
+        console.log(this.name, 'is studying')
+    }
+    sleep() {
+        console.log(this.name, "slept for 100 hours and grew their", this.hair)
+    }
+}
+
+const siff = new Student(165, "ponytail", "Siff")
+const nat = new Student(170, "long", "Nat")
+const emils = new Student(178, "belieber", "Justin")
+
+// Create your own class for Robots
+// Give it some properties and a couple default methods
+// Create 2 more robot objects using the class
+
+// Audio Objects
+const songOne = new Audio("songOne.mp3")
 
 
-// Object Constructor
-function Store()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// class Student {
+//     constructor(studentName, studentGrade) {
+//         this.name = studentName
+//         this.grade = studentGrade
+//         this.school = "ISR"
+//     }
+
+//     study() {
+//         console.log(this.name, "is studying")
+//     }
+//     levelUp() {
+//         this.grade++
+//         console.log(`${this.name} is now in grade ${this.grade}`)
+//     }
+// }
+
+// const tomer = new Student("Tomer", 11)
