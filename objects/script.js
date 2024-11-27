@@ -34,3 +34,9 @@ console.log(car.drive())
 // Create your own object for your dreamCar
 // it should have 5 properties and 2 methods
 // test out your object to see if you can access properites and methods
+
+// Object Literal
+
+
+// Object Constructor
+function Store()

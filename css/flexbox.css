@@ -1,22 +1,45 @@
-.enemies {
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.actions {
+    border: 1px solid;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
-#siff {
-    background-color: violet;
+#buy {
+    background-color: rgb(115, 208, 115);
 }
 
-#nat {
+#sell {
     background-color: lightblue;
 }
 
-.besties {
+#about {
+    background-color: lightpink;
+}
+
+.items {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.besties > img {
-    height: 80px;
+.items > h1 {
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+}
+
+.items > p {
+    height: 100px;
+    width: 100px;
+    background-color: lightblue;
+}
+
+.items > img {
+    height: 100px;
+    width: 100px;
 }
