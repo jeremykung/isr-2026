@@ -4,17 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Manipulation</title>
+    <button id="click-me" onclick="addData()">Add Data</button>
 </head>
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script type="module">
+        // import { addData } from './script.js'
+
+        const { createClient } = supabase;
+
+        setTimeout(async () => {
+
+            const supabase = createClient('https://yadhdsukjpqsjpzytlyr.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlhZGhkc3VranBxc2pwenl0bHlyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzkyODA3NzgsImV4cCI6MjA1NDg1Njc3OH0.PyEW_wo76fCOkIYRR9v1prhMUi-TBugU79xIbXq66ow')
+            
+            const { data, error } = await supabase
+                .from('user')
+                .select()
+
+            if (error) {
+            console.log('supabase error:', error)
+            } else {
+            console.log('data:', data)
+            }
+
+        }, 1);
+
+        export async function addData() {
+
+            const { error } = await supabase
+            .from('user')
+            .insert({ 
+                email: 'test@email.com', 
+                password: '123abc' ,
+                date: '2024-12-10'
+            })
+        }
+
+        document.getElementById("click-me").addEventListener("click", () => {
+            addData()
+        })
+    </script>
     
-    <h1>Cats</h1>
-    <h1 class="below-earth-people">Lizards</h1>
-    <button onclick="showPicture()">Reveal the lizard</button>
-    <div class="image-container">
-        
-    </div>
-    <p>This is a nice cat</p>
-    
-    <script src="script.js"></script>
 </body>
 </html>
